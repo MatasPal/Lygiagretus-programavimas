@@ -1,0 +1,79 @@
+//Reading data
+//void Reading(struct cars car[], int& n);
+//
+//void BubbleSort(struct cars car[], int n);
+//
+//void Printing(struct cars car[], int n);
+//
+//int main() {
+//    int n;
+//    struct cars car[100];
+//
+//    Reading(car, n);
+//    // Sort the cars by manufacturer
+//    BubbleSort(car, n);
+//    Printing(car, n);
+//
+//    return 0;
+//}
+//
+//void Reading(struct cars car[], int& n) {
+//    ifstream duom("IFF-1-8_PalujanskasM_L1_dat_1.txt");
+//    if (!duom.is_open()) {
+//        cout << "Error: Failed to open input file." << endl;
+//        return;
+//    }
+//
+//    duom >> n;
+//    for (int i = 0; i < n; i++) {
+//        duom >> car[i].manufacture;
+//        duom >> car[i].year;
+//        duom >> car[i].engine;
+//    }
+//    duom.close();
+//}
+//
+//void BubbleSort(struct cars car[], int n) {
+//    bool flag = true;
+//    while (flag)
+//    {
+//        flag = false;
+//        for (int i = 0; i < n - 1; i++)
+//        {
+//            string a = car[i].manufacture;
+//            string b = car[i + 1].manufacture;
+//            if (a > b)
+//            {
+//                car[i].manufacture = b;
+//                car[i+1].manufacture = a;
+//                flag = true;
+//            }
+//        }
+//    }
+//}
+//
+//void MinMaxSort(struct cars car[], int n) {
+//    for (int i = 0; i < n - 1; i++) {
+//        for (int j = i + 1; j < n; j++) {
+//            if (car[i].manufacture < car[j].manufacture) {
+//                string temp = car[i].manufacture;
+//                car[i].manufacture = car[j].manufacture;
+//                car[j].manufacture = temp;
+//
+//            }
+//        }
+//    }
+//}
+//
+//void Printing(struct cars car[], int n) {
+//    ofstream rez("rez.txt");
+//    if (!rez.is_open()) {
+//        cout << "Error: Failed to open output file." << endl;
+//        return;
+//    }
+//
+//    for (int i = 0; i < n; i++) {
+//        rez << car[i].manufacture << " " << car[i].year << " " << car[i].engine << endl;
+//    }
+//    rez.close();
+//}
