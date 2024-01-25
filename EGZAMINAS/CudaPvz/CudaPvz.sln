@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CudaPvz", "CudaPvz\CudaPvz.vcxproj", "{44FD2DBB-692C-4AB6-AB81-4680598DC2FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44FD2DBB-692C-4AB6-AB81-4680598DC2FB}.Debug|x64.ActiveCfg = Debug|x64
+		{44FD2DBB-692C-4AB6-AB81-4680598DC2FB}.Debug|x64.Build.0 = Debug|x64
+		{44FD2DBB-692C-4AB6-AB81-4680598DC2FB}.Release|x64.ActiveCfg = Release|x64
+		{44FD2DBB-692C-4AB6-AB81-4680598DC2FB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4AA82E6-D7C4-43EF-BFD9-137A30B80772}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\CudaPvz>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.3\include"  -G   --keep-dir x64\Debug  -maxrregcount=0   --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FS /Zi /RTC1 /MDd " -Xcompiler "/Fdx64\Debug\vc143.pdb" -o "C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\CudaPvz\x64\Debug\kernel.cu.obj" "C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\CudaPvz\kernel.cu" 
+C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\CudaPvz\kernel.cu(1): warning C4005: '__CUDACC__': macro redefinition
+C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\CudaPvz\kernel.cu(1): warning C4005: '__CUDACC__': macro redefinition
+  kernel.cu
+  tmpxft_000062e0_00000000-7_kernel.cudafe1.cpp
+     Creating library C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\x64\Debug\CudaPvz.lib and object C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\x64\Debug\CudaPvz.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  CudaPvz.vcxproj -> C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\EGZAMINAS\CudaPvz\x64\Debug\CudaPvz.exe
