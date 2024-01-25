@@ -1,0 +1,21 @@
+            Sorted cars, that were built less than 10 years ago:
+Nr:       |Manufacture:            |Year:       |Engine:       |Hash: 
+1         |Lexus                   |2015        |3.5           |d49434ad339fee41711e406aacf85702e14fa83a9798f3b76d08f59059af4ef2
+2         |BMW                     |2016        |2.5           |3e83f8c26ee3a1995100b37a7b3d730a7d9f3695c50f425f2cfbf04cce7f99c6
+3         |Infiniti                |2016        |3             |224ce130f966a61710f84550229416d5f8a17fcc57424c3be195e32c0d656fdf
+4         |Volkswagen              |2017        |1.8           |00e6d783e51392157d9dc369f50bc8fbb120d9350b8e27c1c268f9a7f0b1f0b0
+5         |Audi                    |2018        |2             |cb7c679755eb8be6e31eb08e2078f94be25c74f2306452b79c14e4eb765dd2bf
+6         |McLaren                 |2018        |4             |9406605e99530c5a329ea2e487cdda092b4fa7d157fa7c624fdbd71350d5b3fe
+7         |McLaren                 |2018        |4             |9406605e99530c5a329ea2e487cdda092b4fa7d157fa7c624fdbd71350d5b3fe
+8         |Lamborghini             |2019        |6.5           |571642b8fda7ef568da24d248098aaef9b02c823fdb3e9d98a7a3ca1c9b449ad
+9         |Lamborghini             |2019        |6.5           |571642b8fda7ef568da24d248098aaef9b02c823fdb3e9d98a7a3ca1c9b449ad
+10        |Hyundai                 |2020        |1.6           |7afb08ec27e6e9650fdf951080ec7404b2d7e2ce83f3da62b1b9c9d04ab47f65
+11        |Honda                   |2021        |1.5           |47b127b071d01376487e8eb10a21471db5bb44eeb4f3a9044aa9718737d31b9e
+12        |Chevrolet               |2022        |1.8           |0fb819f86760c41e3a814cff9090c303dcb4721065e941abd81bb569f1e52e5b
+13        |Porsche                 |2022        |3.6           |81b59fd63209f31621aec05a1253f32f57c4a468c1e7848d47e9aded738d3ada
+14        |Porsche                 |2022        |3.6           |81b59fd63209f31621aec05a1253f32f57c4a468c1e7848d47e9aded738d3ada
+15        |Kia                     |2023        |1.8           |faf7e3842d4a66f2f80abe15509be51b58f51c89cfb46675d0f1b7925ade345d
+16        |Toyota                  |2023        |2             |4723ac2ef9729287d23aca9bbcb92dd4dfbaea106252866f47fe5c6d0a4470d9
+17        |Land Rover              |2023        |3             |58a671af1c23e91445d2454261600c80dff76c8a0d0e8a34d772e9ed434f48c4
+18        |Ferrari                 |2023        |6.3           |1fdf8c28d48ed4554eac07ca98cf3edddd5f3f1ab36c10ebe90de9b5cc246a79
+19        |Ferrari                 |2023        |6.3           |1fdf8c28d48ed4554eac07ca98cf3edddd5f3f1ab36c10ebe90de9b5cc246a79

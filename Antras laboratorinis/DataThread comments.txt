@@ -1,0 +1,42 @@
+func DataProcess(mainToDataChan <-chan Car, dataToWorkerChan chan<- *Car, workerRequestChan, mainRequestChan chan int) {
+	arraySize := DataSize / 2
+	localArray := make([]Car, arraySize) // 1. Lokalus masyvas, matomas tik šiam procesui, dydis neviršija pusės duomenų faile esančio kiekio
+	count := 0
+	isDone := false
+
+	for !isDone || count > 0 { // Kol nesibaige duomenys arba masyve yra duomenų
+		if count >= arraySize { // 3. Jei masyvas pilnas, laukiama kol workeris pasiims duomenis
+			<-workerRequestChan // Laukiama kol workeris pasiims duomenis
+			value := localArray[count-1]
+			dataToWorkerChan <- &value // Workeris pasiima duomenis
+			count--
+		} else if count <= 0 && !isDone { // 4. Jei masyvas tuscias ir dar nesibaige duomenys, laukiama kol bus duomenu
+			<-mainRequestChan                    // Laukiama kol pagrindinė gija pridės naują automobilio duomenų elementą į masyvą
+			localArray[count] = <-mainToDataChan // Pridedam naują duomenį į laikiną masyvą
+			count++
+		} else {
+			select { // 2. Jei masyvas ne tuscias ir dar nesibaige duomenys, laukiama kol bus duomenų arba workeris pasiims duomenis
+			case request := <-mainRequestChan: // Papildoma užklausa
+				if request == 0 {
+					isDone = true
+					break
+				}
+				input := <-mainToDataChan
+				localArray[count] = input
+				count++
+				break
+			case <-workerRequestChan: // Workerio užklausa
+				value := localArray[count-1]
+				dataToWorkerChan <- &value
+				count--
+				break
+			}
+		}
+	}
+
+	close(dataToWorkerChan) // Uždaryti duomenų į workerį siuntimo kanalą; visi darbininkai pradės gauti nil, tai reiškia, kad duomenys baigėsi
+	for i := 0; i < WorkerCount; i++ {
+		<-workerRequestChan // Laukiama kol visi workeriai pasiims duomenis
+	}
+	close(workerRequestChan) // Uždaryti kanalą, informuojant workerius, kad jie gali baigti darbą
+}
