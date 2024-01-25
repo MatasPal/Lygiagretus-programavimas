@@ -1,0 +1,6 @@
+﻿  Duomenu generavimas.cpp
+C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\Trecias laboratorinis\LAB3_CUDA\Duomenu generavimas\Duomenu generavimas\Duomenu generavimas.cpp(26,57): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\Trecias laboratorinis\LAB3_CUDA\Duomenu generavimas\Duomenu generavimas\Duomenu generavimas.cpp(50,13): warning C4566: character represented by universal-character-name '\u0173' cannot be represented in the current code page (1252)
+C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\Trecias laboratorinis\LAB3_CUDA\Duomenu generavimas\Duomenu generavimas\Duomenu generavimas.cpp(50,13): warning C4566: character represented by universal-character-name '\u012F' cannot be represented in the current code page (1252)
+C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\Trecias laboratorinis\LAB3_CUDA\Duomenu generavimas\Duomenu generavimas\Duomenu generavimas.cpp(50,13): warning C4566: character represented by universal-character-name '\u0105' cannot be represented in the current code page (1252)
+  Duomenu generavimas.vcxproj -> C:\Studijos\3 kursas\Pirmas pusmetis\Lygiagretusis programavimas\Trecias laboratorinis\LAB3_CUDA\Duomenu generavimas\x64\Debug\Duomenu generavimas.exe
